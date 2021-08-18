@@ -34,15 +34,15 @@ export default function Base() {
         <View style={app.conteiner}>     
             <View style={base.session}>
                 <Text style={base.textBase}>Binário</Text>
-                <TextInput style={base.inputBase} onChangeText={(num) => binario(num)} defaultValue={numBinario} />
+                <TextInput keyboardType='decimal-pad' style={base.inputBase} onChangeText={(num) => binario(num)} defaultValue={numBinario} />
             </View>
             <View style={base.session}>
                 <Text style={base.textBase}>Octal</Text>
-                <TextInput style={base.inputBase} onChangeText={(num) => octal(num)} defaultValue={numOctal} />
+                <TextInput keyboardType='decimal-pad' style={base.inputBase} onChangeText={(num) => octal(num)} defaultValue={numOctal} />
             </View>
             <View style={base.session}>
                 <Text style={base.textBase}>Decimal</Text>
-                <TextInput style={base.inputBase} onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
+                <TextInput keyboardType='decimal-pad' style={base.inputBase} onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
             </View>
             <View style={base.session}>
                 <Text style={base.textBase}>Hexadecimal</Text>
