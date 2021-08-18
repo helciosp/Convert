@@ -31,23 +31,23 @@ export default function Base() {
     }
 
     return (
-        <View style={app.conteiner}>
-            <View style={base.binario}>
-                <Text>Binário</Text>
-                <TextInput onChangeText={(num) => binario(num)} defaultValue={numBinario} />
+        <View style={app.conteiner}>     
+            <View style={base.session}>
+                <Text style={base.textBase}>Binário</Text>
+                <TextInput style={base.inputBase} onChangeText={(num) => binario(num)} defaultValue={numBinario} />
             </View>
-            <View style={base.octal}>
-                <Text>Octal</Text>
-                <TextInput onChangeText={(num) => octal(num)} defaultValue={numOctal} />
+            <View style={base.session}>
+                <Text style={base.textBase}>Octal</Text>
+                <TextInput style={base.inputBase} onChangeText={(num) => octal(num)} defaultValue={numOctal} />
             </View>
-            <View style={base.decimal}>
-                <Text>Decimal</Text>
-                <TextInput onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
+            <View style={base.session}>
+                <Text style={base.textBase}>Decimal</Text>
+                <TextInput style={base.inputBase} onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
             </View>
-            <View style={base.hexadecimal}>
-                <Text>Hexadecimal</Text>
-                <TextInput onChangeText={(num) => hexadecimal(num)} defaultValue={numHexadecimal} />
-            </View>  
+            <View style={base.session}>
+                <Text style={base.textBase}>Hexadecimal</Text>
+                <TextInput style={base.inputBase} onChangeText={(num) => hexadecimal(num)} defaultValue={numHexadecimal} />
+            </View>   
         </View>
         
     )
