@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Text, TextInput, View } from 'react-native'
+import { app, base } from '../styles';
 
 export default function Base() {
 
@@ -30,15 +31,24 @@ export default function Base() {
     }
 
     return (
-        <View>
-            <Text>Binário</Text>
-            <TextInput onChangeText={(num) => binario(num)} defaultValue={numBinario} />
-            <Text>Octal</Text>
-            <TextInput onChangeText={(num) => octal(num)} defaultValue={numOctal} />
-            <Text>Decimal</Text>
-            <TextInput onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
-            <Text>Hexadecimal</Text>
-            <TextInput onChangeText={(num) => hexadecimal(num)} defaultValue={numHexadecimal} />
+        <View style={app.conteiner}>
+            <View style={base.binario}>
+                <Text>Binário</Text>
+                <TextInput onChangeText={(num) => binario(num)} defaultValue={numBinario} />
+            </View>
+            <View style={base.octal}>
+                <Text>Octal</Text>
+                <TextInput onChangeText={(num) => octal(num)} defaultValue={numOctal} />
+            </View>
+            <View style={base.decimal}>
+                <Text>Decimal</Text>
+                <TextInput onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
+            </View>
+            <View style={base.hexadecimal}>
+                <Text>Hexadecimal</Text>
+                <TextInput onChangeText={(num) => hexadecimal(num)} defaultValue={numHexadecimal} />
+            </View>  
         </View>
+        
     )
 }

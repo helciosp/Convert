@@ -5,7 +5,7 @@ import Base from './src/components/Base'
 
 export default function App() {
   return (
-    <View>
+    <View style={{flex: 1}}>
       <Base />
     </View>
   );
