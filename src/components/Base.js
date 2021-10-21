@@ -21,10 +21,11 @@ export default function Base() {
         setNumHexadecimal(newNum.toString(16));
         setNumBinario(newNum.toString(2));
     }
-    const deciaml = (num) => {
-        setNumBinario(Number(num).toString(2));
-        setNumHexadecimal(Number(num).toString(16));
-        setNumOctal(Number(num).toString(8));
+    const decimal = (num) => {
+        let newNum = parseInt(num)
+        setNumBinario(newNum.toString(2));
+        setNumHexadecimal(newNum.toString(16));
+        setNumOctal(newNum.toString(8));
     }
     const hexadecimal = (num) => {
         let newNum = parseInt(num, 16);
@@ -45,7 +46,7 @@ export default function Base() {
             </View>
             <View style={base.session}>
                 <Text style={base.textBase}>Decimal</Text>
-                <TextInput keyboardType='decimal-pad' style={base.inputBase} onChangeText={(num) => deciaml(num)} defaultValue={numDecimal} />
+                <TextInput keyboardType='decimal-pad' style={base.inputBase} onChangeText={(num) => decimal(num)} defaultValue={numDecimal} />
             </View>
             <View style={base.session}>
                 <Text style={base.textBase}>Hexadecimal</Text>
