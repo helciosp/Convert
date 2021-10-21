@@ -10,9 +10,10 @@ export default function Base() {
     const [numHexadecimal, setNumHexadecimal] = useState("")
 
     const binario = (num) => {
-        setNumDecimal(Number(num).totring(10));
-        setNumHexadecimal(Number(num).toString(16));
-        setNumOctal(Number(num).toString(8));
+        let newNum = parseInt(num, 2)
+        setNumDecimal(newNum.toString(10));
+        setNumHexadecimal(newNum.toString(16));
+        setNumOctal(newNum.toString(8));
     }
     const octal = (num) => {
         setNumDecimal(Number(num).toString(10));
