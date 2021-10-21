@@ -16,9 +16,10 @@ export default function Base() {
         setNumOctal(newNum.toString(8));
     }
     const octal = (num) => {
-        setNumDecimal(Number(num).toString(10));
-        setNumHexadecimal(Number(num).toString(16));
-        setNumBinario(Number(num).toString(2));
+        let newNum = parseInt(num, 8)
+        setNumDecimal(newNum.toString(10));
+        setNumHexadecimal(newNum.toString(16));
+        setNumBinario(newNum.toString(2));
     }
     const deciaml = (num) => {
         setNumBinario(Number(num).toString(2));
