@@ -24,4 +24,4 @@ expo start
 👤 **Hélcio Pessanha**
 
 * Github: [@helciosp43](https://github.com/helciosp43)
-* LinkedIn: [@hélcio-de-souza-pessanha-784016200](https://linkedin.com/in/hélcio-de-souza-pessanha-784016200)
+* LinkedIn: [@helciosp](https://linkedin.com/in/helciosp)
