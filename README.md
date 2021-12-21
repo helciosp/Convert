@@ -3,7 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
 </p>
 
-> Aplicativo para converção de bases numéricas feito com Expo CLI. Testado apenas no android
+> Aplicativo para conversão de bases numéricas feito com Expo CLI. Testado apenas no android
 
 ### 🏠 [Homepage](https://github.com/helciosp43/Convert)
 
